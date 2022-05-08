@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>어버이날</title>
+  </head>
+  <body>
+    <div class="container">
+      <img
+        src="https://i.pinimg.com/originals/05/2a/cb/052acb78f714bd17d26d26ff60c16d98.png"
+        alt=""
+      />
+      <p>(밑의 이름을 눌러보세요!)</p>
+      <div>
+        <h1>어머니</h1>
+        <h1>아버지</h1>
+      </div>
+    </div>
+    <h2 class="type-effect hide"></h2>
+    <script src="https://unpkg.com/typeit@8.5.4/dist/index.umd.js"></script>
+    <script>
+      const container = document.querySelector(".container");
+      const h1_all = document.querySelectorAll("h1");
+      const h2 = document.querySelector("h2");
+
+      // 어머니
+      h1_all[0].addEventListener("click", () => {
+        container.classList.toggle("hide");
+        h2.classList.toggle("hide");
+
+        new TypeIt(".type-effect", {
+          strings: "어머니 사랑해요",
+        }) //
+          .pause(1000)
+          .move(-5)
+          .delete(7, { delay: 1000 })
+          .type("신미경씨", { delay: 1000 })
+          .move(5)
+          .break()
+          .type("22년동안 고생만 시켰는데 ㅋㅋㅋ", { delay: 1000 })
+          .delete()
+          .type("그래도 날 사랑해주는 것이 대단합니다", { delay: 1000 })
+          .break()
+          .type("(나였으면 자식 손절 쳤다 ㅋㅋ)", { delay: 1000 })
+          .delete()
+          .type("어머니는 여전히 제 정신적 지주입니다", { delay: 1000 })
+          .break()
+          .type("성인이 되어서야 어머니랑", {
+            delay: 1000,
+          })
+          .break()
+          .type(" 가까워진 것 같은 느낌이지만", {
+            delay: 1000,
+          })
+          .delete()
+          .type("기분이 좋네요", { delay: 1000 })
+          .break()
+          .type("(가끔은 귀찮게 하지만 ㅋㅋㅋ)", { delay: 1000 })
+          .delete()
+          .type("그래도 어머니니까 저는 다 이해합니다", { delay: 1000 })
+          .delete()
+          .type("어머니의 고생 모르는 거 아니니까", { delay: 1000 })
+          .break()
+          .type("걱정하지 말아주세요", { delay: 1000 })
+          .delete()
+          .type("사랑합니다", { delay: 1000 })
+          .break()
+          .type("&#9829;", { delay: 1000 })
+          .go();
+      });
+
+      // 아버지
+      h1_all[1].addEventListener("click", () => {
+        container.classList.toggle("hide");
+        h2.classList.toggle("hide");
+
+        new TypeIt(".type-effect", {
+          strings: "아버지 사랑해요",
+        }) //
+          .pause(1000)
+          .move(-5)
+          .delete(7, { delay: 1000 })
+          .type("권종한씨", { delay: 1000 })
+          .move(5)
+          .break()
+          .type("예전엔 아빠랑 별로 안 친했는데ㅋㅋㅋ", { delay: 1000 })
+          .delete()
+          .type("내가 아빠한테 다가가려고 노력하는 만큼", { delay: 1000 })
+          .break()
+          .type("아빠도 다가오려고 노력하는 것 같아서 기쁩니다", {
+            delay: 1000,
+          })
+          .delete()
+          .type("아직은 아버지가 미숙한거 알지만", { delay: 1000 })
+          .break()
+          .type("그래도 저는 아버지 포기 안합니다 ^-^", {
+            delay: 1000,
+          })
+          .delete()
+          .type("누구는 아버지를 싫어할지도 몰라도", { delay: 1000 })
+          .break()
+          .type("저는 아버지가 제일 좋습니다 (찡긋)", {
+            delay: 1000,
+          })
+          .delete()
+          .type("아버지의 고생 모르는 거 아니니까", { delay: 1000 })
+          .break()
+          .type("걱정하지 말아주세요", { delay: 1000 })
+          .delete()
+          .type("사랑합니다", { delay: 1000 })
+          .break()
+          .type("&#9829;", { delay: 1000 })
+          .go();
+      });
+    </script>
+  </body>
+</html>
